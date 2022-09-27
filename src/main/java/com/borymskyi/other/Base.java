@@ -67,18 +67,28 @@ public class Base {
          * Matrix multiplication by matrix (square matrices)
          * Умножение матрицы на матрицу (квадратные матрицы)
          */
-        int[][] a1 = new int[][] { {1, 40, 30}, {60, 10, 5, 2}, {90, 43, 64}};
-        int[][] a2 = new int[][] { {1, 3, 7}, {2, 5, 5, 2}, {4, 2, 2}};
-        int N = a1.length;
-        int[][] a3 = new int[N][N];
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                //вычисление скалаярного произведения
-                //строки i и столбца j.
-                for (int k = 0; k < N; k++) {
-                    a3[i][j] += a1[i][k] * a2[k][j];
-                }
-            }
+//        int[][] a1 = new int[][] { {1, 40, 30}, {60, 10, 5, 2}, {90, 43, 64}};
+//        int[][] a2 = new int[][] { {1, 3, 7}, {2, 5, 5, 2}, {4, 2, 2}};
+//        int N = a1.length;
+//        int[][] a3 = new int[N][N];
+//        for (int i = 0; i < N; i++) {
+//            for (int j = 0; j < N; j++) {
+//                //вычисление скалаярного произведения
+//                //строки i и столбца j.
+//                for (int k = 0; k < N; k++) {
+//                    a3[i][j] += a1[i][k] * a2[k][j];
+//                }
+//            }
+//        }
+
+        int[] a = new int[] {5, 10};
+        int[] b = a;
+        b[0] = 30;
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + ", ");
+        }
+        for (int i = 0; i < b.length; i++) {
+            System.out.print(b[i] + ", ");
         }
     }
 }
